@@ -1,0 +1,179 @@
+/* Estilos generales */
+body {
+    font-family: 'GT Zirkon Regular', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+	font-size: 18pt;
+}
+
+h2 {
+    color: #000000;
+    margin-top: 30px;
+    text-align: center;
+	font-size: 18pt;
+}
+
+/* Estilos del contenedor del formulario */
+.form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para los labels */
+label {
+    margin-bottom: 10px;
+    font-size: 13pt;
+    color: #000000;
+}
+
+/* Estilo para los inputs */
+input {
+	font-family: 'GT Zirkon Regular';
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 11pt;
+    transition: border-color 0.3s ease;
+}
+
+input::placeholder {
+	font-family: 'GT Zirkon Regular';
+	font-size: 11pt;
+}
+
+/* Estilo al enfocar los inputs */
+input:focus {
+    border-color: #333333;
+    outline: none !important;
+}
+
+input:valid:not(:placeholder-shown) {
+    background-color: #f4f4f4;
+}
+
+/* Estilo para el botón */
+button {
+	font-family: 'GT Zirkon Regular';
+    padding: 12px 20px;
+    background-color: #7a7a7a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13pt;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+/* Estilos para el mensaje de información */
+.info-message {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #555;
+	background-color: #f9f9f9;
+	padding: 10px;
+	border-left: 5px solid #7a7a7a;
+	border-radius: 3px;
+}
+
+/* Estilos del contenedor de la firma generada */
+.signature-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.image img {
+    border: 0;
+    vertical-align: middle;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+/* Estilos para el área editable */
+#qg[contenteditable="true"] table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: transparent;
+    color: rgb(34,34,34);
+    width: 711.5px;
+    max-width: 1000px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Aplica la fuente correctamente dentro del área editable */
+#qg[contenteditable="true"] {
+    font-family: 'Roboto Condensed', sans-serif !important;
+    color: rgb(44,46,53) !important;
+}
+
+/* Asegúrate de que los estilos no se sobrescriban */
+#qg[contenteditable="true"] p {
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-size: 16px !important;
+    color: rgb(44,46,53) !important;
+}
+
+#qg[contenteditable="true"] a {
+    color: rgb(44,46,53) !important;
+    text-decoration: none !important;
+}
+
+/* Asegura que las imágenes mantengan su tamaño */
+#qg[contenteditable="true"] img {
+    width: 85px !important;
+    height: 20px !important;
+}
+
+/* Asegúrate de que el contenido editable no sobrescriba los márgenes y el color */
+#qg[contenteditable="true"] {
+    margin: 0 !important;
+    padding: 0 !important;
+    color: rgb(44,46,53) !important;
+}
+
+@font-face {
+    font-family: 'GT Zirkon Medium';
+    src: url('./fonts/GT-Zirkon-Medium.woff') format('woff');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Zirkon Regular';
+    src: url('./fonts/GT-Zirkon-Regular.woff') format('woff');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+
+

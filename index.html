@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<p style="margin:0px;font-size:16px;padding-bottom:15px;color:rgb(44,46,53)">
+		<img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcvGQVV9BEZ8Xk_AqwPTunNSiz_7cD03EGbOoh_y38_BTFXuK85tjbIH0stuEiZuwVgt5eW8mNN8tvVqOyBbq0drlFJMEH5rPOkEOkx_LD49uwuQUIuLqLwu43aMUzfqcya8Wg3SgVDwXvFy-sK6vo7BIuh?key=0yoYn1Wk--m5eohp_i2BZxI4" width="85" height="20" alt="Logo">
+	</p>
+    <h1>SIGNATURE GENERATOR</h1>
+    <div class="form-container">
+        <form id="signature-form">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name" placeholder="REQUIRED" required><br>
+
+            <label for="surname">SURNAME</label>
+            <input type="text" id="surname" name="surname" placeholder="REQUIRED" required><br>
+
+            <label for="gender">PRONOUNS</label>
+            <input type="text" id="gender" name="gender" placeholder="IF YOU FEEL LIKE IT - HE/HIM, SHE/HER, THEY/THEM"><br>
+
+            <label for="position">POSITION</label>
+            <input type="text" id="position" name="position" placeholder="REQUIRED" required><br>
+
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" id="phone" name="phone" placeholder="REQUIRED" required><br>
+
+            <button type="submit">GENERATE SIGNATURE</button>
+        </form>
+    </div>
+	
+	<div id="show-signature" style="display: none;">
+		<h2>SIGNATURE GENERATED</h2>
+		<!-- Botón para copiar la firma generada -->
+		<button id="copy-button" style="display:none;">COPY SIGNATURE</button>
+		
+		<!-- Mensaje de información -->
+		<div class="info-message">
+			<span class="icon">ℹ️</span>
+			<span>Important: Copy the signature by clicking the button to ensure it is copied in the correct format.</span>
+		</div>
+		
+		<div class="signature-container" id="signature-container">
+			<!-- Aquí se mostrará la firma generada -->
+		</div>
+	</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
